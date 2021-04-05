@@ -24,8 +24,14 @@ gem 'bootstrap'
 # Gema de Jquery
 gem 'jquery-rails'
 
+# Gema de credenciales
+gem 'devise'
+
 # Gema de iconos
 gem 'font_awesome5_rails', '~> 1.3'
+
+# Gema de formularios
+gem 'simple_form'
 
 # Fin de Gemas personalizadas
 
