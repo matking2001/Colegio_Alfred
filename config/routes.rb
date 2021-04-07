@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
 
-  get 'noticias/index'
-  get 'noticias/show'
-  get 'noticias/edit'
-  get 'noticias/new'
+  resources :posts, only:[:destroy, :index, :edit, :new, :create, :update ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root to: "noticias#index"
+  root to: "posts#index"
 end
