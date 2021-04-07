@@ -1,6 +1,6 @@
-class CreateNoticia < ActiveRecord::Migration[5.2]
+class CreatePosts < ActiveRecord::Migration[5.2]
   def change
-    create_table :noticia do |t|
+    create_table :posts do |t|
       t.string :titulo
       t.date :fecha
       t.text :contenido
