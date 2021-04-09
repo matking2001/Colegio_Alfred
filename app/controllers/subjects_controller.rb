@@ -40,11 +40,11 @@ class SubjectsController < ApplicationController
   end
 
   def destroy
-    
+    @subject.destroy
+    flash.alert = "Materia eliminada"
+    redirect_to user_subjects_path(@user)
   end
   
-  
-
   private
 
   def set_user

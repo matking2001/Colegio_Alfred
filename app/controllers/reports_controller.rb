@@ -29,6 +29,21 @@ class ReportsController < ApplicationController
     
   end
 
+  def update
+    if @report.update(report_params)
+      flash.notice = "Anotación actualizada"
+      redirect_to  user_reports_path(@user)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @report.destroy
+    flash.alert = "Anotación eliminada"
+    redirect_to user_reports_path(@user)
+  end
+
   private
 
   def set_user
@@ -40,7 +55,7 @@ class ReportsController < ApplicationController
   end
   
   def report_params
-    params.require(:report).permit(:user, :titulo, :contenido, :fecha)
+    params.require(:report).permit(:user_id, :titulo, :contenido, :fecha)
   end
   
 

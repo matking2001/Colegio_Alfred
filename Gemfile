@@ -33,6 +33,9 @@ gem 'font_awesome5_rails', '~> 1.3'
 # Gema de formularios
 gem 'simple_form'
 
+# Gema Trix
+gem 'trix'
+
 # Fin de Gemas personalizadas
 
 # Use CoffeeScript for .coffee assets and views

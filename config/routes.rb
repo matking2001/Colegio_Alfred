@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :posts, only:[:destroy, :index, :edit, :new, :create, :update]
-  #resources :users, only:[:destroy, :index, :show, :edit, :new, :create, :update]
+  resources :users, only:[:destroy, :index, :show, :edit, :new, :create, :update]
 
   resources :users do
     resources :reports
