@@ -36,6 +36,9 @@ gem 'simple_form'
 # Gema de texto-enriquecido
 gem 'trix'
 
+# Gema de rolify
+gem "rolify"
+
 # Fin de Gemas personalizadas
 
 # Use CoffeeScript for .coffee assets and views
